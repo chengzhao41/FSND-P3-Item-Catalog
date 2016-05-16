@@ -59,5 +59,5 @@ class Item(Base):
 			'last_modified_time': self.last_modified_time.strftime("%a, %d %b %Y %H:%M:%S")
 		}
 
-engine = create_engine('sqlite:///catalog.db')
+engine = create_engine('postgresql:///catalog.db')
 Base.metadata.create_all(engine)
